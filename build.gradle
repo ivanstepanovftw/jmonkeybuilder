@@ -50,9 +50,9 @@ compileTestJava {
     options.compilerArgs += '-parameters'
 }
 
-mainClassName = "com.ss.editor.JfxApplication"
+mainClassName = "com.ss.editor.Main"
 
-ext.applicationMainClass = "com.ss.editor.JfxApplication"
+ext.applicationMainClass = "com.ss.editor.Main"
 ext.applicationVendor = "javasabr@gmail.com"
 ext.applicationTitle = "jMonkeyBuilder"
 ext.jmeVersion = "3.2.1-SNAPSHOT"
@@ -148,6 +148,26 @@ dependencies {
     // SVG support
     // https://mvnrepository.com/artifact/de.codecentric.centerdevice/javafxsvg
     compile group: 'de.codecentric.centerdevice', name: 'javafxsvg', version: '1.2.1'
+
+    // JavaFX
+    compile "org.openjfx:javafx-base:13:win"
+    compile "org.openjfx:javafx-base:13:linux"
+    compile "org.openjfx:javafx-base:13:mac"
+    compile "org.openjfx:javafx-controls:13:win"
+    compile "org.openjfx:javafx-controls:13:linux"
+    compile "org.openjfx:javafx-controls:13:mac"
+    compile "org.openjfx:javafx-graphics:13:win"
+    compile "org.openjfx:javafx-graphics:13:linux"
+    compile "org.openjfx:javafx-graphics:13:mac"
+    compile "org.openjfx:javafx-fxml:13:win"
+    compile "org.openjfx:javafx-fxml:13:linux"
+    compile "org.openjfx:javafx-fxml:13:mac"
+    compile "org.openjfx:javafx-swing:13:win"
+    compile "org.openjfx:javafx-swing:13:linux"
+    compile "org.openjfx:javafx-swing:13:mac"
+    compile "org.openjfx:javafx-web:13:win"
+    compile "org.openjfx:javafx-web:13:linux"
+    compile "org.openjfx:javafx-web:13:mac"
 
     // jME
     compile "com.github.JavaSaBr.jmonkeyengine:jme3-core:$jmeVersion"
